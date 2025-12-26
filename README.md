@@ -38,7 +38,7 @@ Request (async):
 curl -X POST https://verify.osec.io/verify \
   -H "Content-Type: application/json" \
   -d '{
-    "repository": "https://github.com/uniwexLab/hodlhunt",
+    "repository": "https://github.com/uniwexLab/hodlhunt_pvp",
     "program_id": "B1osUCap5eJ2iJnbRqfCQB87orhJM5EqZqPcGMbjJvXz",
     "commit_hash": "REPLACE_WITH_COMMIT",
     "lib_name": "hodlhunt"
