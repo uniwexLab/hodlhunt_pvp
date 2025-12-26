@@ -1,0 +1,27 @@
+[toolchain]
+package_manager = "yarn"
+anchor_version = "0.31.1"
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+cryptofish = "J53FRrByV9UVSsKbhCY8WBSzZciD1z92bVuVhTUKiHei"
+
+[programs.devnet]
+cryptofish = "BJsnZMfuDmhhs1AJXtBk36HhiT8eKLABP51QLEi3isYQ"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[test]
+startup_wait = 10000
+validator = { url = "http://localhost:8890", faucet = "http://localhost:9901" }
+
+[scripts]
+test = "yarn run mocha -t 1000000 tests/**/*.js"
